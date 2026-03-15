@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
 .logo {
   height: 6em;
   padding: 1.5em;
+  padding-bottom: 0%;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -39,4 +42,145 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+#root {
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: white;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  margin: auto;
+  position: relative;
+}
+
+.mini-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 25px;
+  width: 200px;
+  height: auto;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mini-header{
+  height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(226, 195, 147);
+  text-align: center;
+  border-radius: 10px;
+  width: 93%;
+  margin: 0;
+}
+
+.answer-space.incorrect {
+  background-color:red;
+}
+
+.answer-space.correct {
+  background-color:green;
+}
+
+.answer-space {
+  background-color: rgb(226, 195, 147);
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  clear: both;
+}
+
+li {
+  margin-top:3px;
+  margin-bottom:3px;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: #FFFDD0;
+  border-radius: 15px;
+}
+
+button.newdrink {
+  width: auto;
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(138, 98, 12, 0.942);
+  font-weight: bold;
+  color: white;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.title-container {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.drink-container {
+  display: flex;
+  justify-content: space-between;
+}
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.choice {
+  padding: 8px 14px;
+  background: #e2c393;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.choice input {
+  display: none;
+}
+
+.choice:hover {
+  background: #d6ab6a;
+}
+
+.choice.selected {
+  background: #b8742d;
+  color: white;
+}
+h2 {
+  margin-bottom: 0;
+  margin-top: 0%;
+}
+p{
+  margin: 0%;
 }
